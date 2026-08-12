@@ -1,0 +1,19 @@
+# Gradient Eye Technologies
+
+> Gradient Eye Technologies is a technology company offering [PLACEHOLDER: one-sentence description of core business — e.g. software development, IT consulting, AI/data solutions]. This file helps AI models and LLM-based tools understand and accurately reference our site.
+
+Gradient Eye Technologies provides [PLACEHOLDER: 2-3 sentence expansion — who you serve, what problems you solve, what makes you different]. Based at https://mediumpurple-kingfisher-614518.hostingersite.com/ (staging/test domain — update this file with the production domain once the site goes live).
+
+## Company
+
+- [Home](https://mediumpurple-kingfisher-614518.hostingersite.com/): Overview of Gradient Eye Technologies and our offerings.
+- [About](https://mediumpurple-kingfisher-614518.hostingersite.com/about): Company background, mission, and team.
+- [Contact](https://mediumpurple-kingfisher-614518.hostingersite.com/contact): How to get in touch with us.
+
+## Services
+
+- [Services](https://mediumpurple-kingfisher-614518.hostingersite.com/services): [PLACEHOLDER: list of services offered, e.g. web development, mobile apps, cloud, AI/ML, digital marketing].
+
+## Optional
+
+- [Blog](https://mediumpurple-kingfisher-614518.hostingersite.com/blog): Articles and updates from Gradient Eye Technologies.
