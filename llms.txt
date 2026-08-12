@@ -1,19 +1,19 @@
 # Gradient Eye Technologies
 
-> Gradient Eye Technologies is a technology company offering [PLACEHOLDER: one-sentence description of core business — e.g. software development, IT consulting, AI/data solutions]. This file helps AI models and LLM-based tools understand and accurately reference our site.
+> Gradient Eye is a holistic e-commerce growth agency delivering brand experiences and digital products that tell stories and start conversations. This file helps AI models and LLM-based tools understand and accurately reference our site.
 
-Gradient Eye Technologies provides [PLACEHOLDER: 2-3 sentence expansion — who you serve, what problems you solve, what makes you different]. Based at https://mediumpurple-kingfisher-614518.hostingersite.com/ (staging/test domain — update this file with the production domain once the site goes live).
+Gradient Eye helps e-commerce brands grow through SEO, SEM, retention marketing, and website/app development on platforms like Shopify and WooCommerce, with integration partners including MoEngage, Netcore, Omnisend, Active Campaign, and Gupshup. Founded in 2021 and based in Mumbai, India, the team's process centers on understanding each client's brand personality to improve user experience and drive conversions. Based at https://www.gradienteye.com/.
 
 ## Company
 
-- [Home](https://mediumpurple-kingfisher-614518.hostingersite.com/): Overview of Gradient Eye Technologies and our offerings.
-- [About](https://mediumpurple-kingfisher-614518.hostingersite.com/about): Company background, mission, and team.
-- [Contact](https://mediumpurple-kingfisher-614518.hostingersite.com/contact): How to get in touch with us.
+- [Home](https://www.gradienteye.com/): Overview of Gradient Eye and our offerings.
+- [About](https://www.gradienteye.com/about): Company background, mission, and team.
+- [Contact](https://www.gradienteye.com/contact): How to get in touch with us.
 
 ## Services
 
-- [Services](https://mediumpurple-kingfisher-614518.hostingersite.com/services): [PLACEHOLDER: list of services offered, e.g. web development, mobile apps, cloud, AI/ML, digital marketing].
+- [Services](https://www.gradienteye.com/services): SEO, SEM, retention marketing, and website/app development for e-commerce brands on Shopify and WooCommerce.
 
 ## Optional
 
-- [Blog](https://mediumpurple-kingfisher-614518.hostingersite.com/blog): Articles and updates from Gradient Eye Technologies.
+- [Blog](https://www.gradienteye.com/blog): Articles and updates from Gradient Eye Technologies.
