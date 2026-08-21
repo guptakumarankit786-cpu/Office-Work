@@ -72,7 +72,7 @@ Cooking protein rich meals from scratch takes planning, and on a busy day, plann
 
 Addme Noodlemate already combines real protein, either chicken or crayfish, with dried vegetables and seasoning in one pack. You add water and noodles, and in a few minutes you have a meal with protein and vegetables already built in. Adding a boiled or fried egg on top gives you two protein sources in one bowl, which is a simple way to stretch your protein further on a tight schedule. See the [Noodlemate Chicken](https://addme.ng/products/addme-noodlemate-chicken) and [Noodlemate Crayfish](https://addme.ng/products/addme-noodlemate-crayfish) packs to try this for yourself.
 
-If you already have your own protein at home, such as leftover beans, boiled eggs, or grilled fish, [Addme Mealmate](https://www.addme.ng/products/addme-mealmate-1-pack) is a dried vegetable mix you can stir into rice, pasta, soup, or beans to add vegetables and flavor without extra prep. It is a simple way to make a beans or egg based meal feel more complete.
+If you already have your own protein at home, such as leftover beans, boiled eggs, or grilled fish, [Addme Mealmate](https://www.addme.ng/collections/mealmate) is a dried vegetable mix you can stir into rice, pasta, soup, or beans to add vegetables and flavor without extra prep. It is a simple way to make a beans or egg based meal feel more complete.
 
 For more ideas on building complete meals without spending more, read our guide on [eating balanced meals on a budget in Nigeria](https://www.addme.ng/blogs/news/how-to-eat-balanced-meals-on-a-budget-in-nigeria-this-season).
 
