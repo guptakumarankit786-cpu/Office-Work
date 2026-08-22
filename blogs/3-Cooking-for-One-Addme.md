@@ -59,9 +59,9 @@ The common thread is that each of these can be made in one pot, in a single port
 
 ## How Addme Makes Solo Cooking Easier
 
-Addme meal mixes solve two of the biggest solo cooking problems at once, waste and effort. Each pack of [Noodlemate](https://addme.ng/products/addme-noodlemate-chicken), [Pastamate](https://addme.ng/products/red-sauce-pasta), or [Ricemate](https://addme.ng/category/addme-products/addme-ricemate) already contains a measured amount of dried vegetables, protein, and seasoning. There is nothing left over to spoil in the fridge and no need to chop, wash, or measure ingredients for a single serving.
+Addme meal mixes solve two of the biggest solo cooking problems at once, waste and effort. Each pack of [Noodlemate](https://www.addme.ng/products/noodlemate-chicken-10-packs), [Pastamate](https://www.addme.ng/products/pastamate-red-sauce-1-pack), or [Ricemate](https://www.addme.ng/products/addme-ricemate-1-pack) already contains a measured amount of dried vegetables, protein, and seasoning. There is nothing left over to spoil in the fridge and no need to chop, wash, or measure ingredients for a single serving.
 
-If you already have your own protein or a base dish ready, [Addme Mealmate](https://www.addme.ng/collections/mealmate) is a simple way to add vegetables and flavor to a single portion without buying and prepping fresh vegetables that a one person household often cannot finish in time. It stirs directly into rice, pasta, soup, or noodles.
+If you already have your own protein or a base dish ready, [Addme Mealmate](https://www.addme.ng/products/addme-mealmate-1-pack) is a simple way to add vegetables and flavor to a single portion without buying and prepping fresh vegetables that a one person household often cannot finish in time. It stirs directly into rice, pasta, soup, or noodles.
 
 Because everything you need for one meal is already in the pack, cooking for one stops feeling like a smaller, less convenient version of cooking for a family. It becomes its own simple routine. For more time saving ideas in the kitchen, see our [10 kitchen hacks for busy Nigerian home cooks](https://www.addme.ng/blogs/news/10-kitchen-hacks-every-busy-nigerian-home-cook-needs-to-know) and our tips on [making instant noodles taste better in five minutes](https://www.addme.ng/blogs/news/5-minute-noodles-taste-like-you-spent-an-hour).
 
@@ -122,4 +122,4 @@ Yes, rice and most stews freeze well for later use. Cook a slightly larger batch
 
 ## The Bottom Line
 
-Cooking for one does not need to mean eating poorly or wasting food every week. The main shift is planning around your own portion size instead of trying to shrink a family recipe. Addme meal mixes are built with this in mind, giving you protein, vegetables, and seasoning already measured for a single, satisfying meal. Browse the [full Addme range](https://www.addme.ng/collections/shop-addme-bundles) to find packs that fit a solo kitchen.
+Cooking for one does not need to mean eating poorly or wasting food every week. The main shift is planning around your own portion size instead of trying to shrink a family recipe. Addme meal mixes are built with this in mind, giving you protein, vegetables, and seasoning already measured for a single, satisfying meal. Browse the [full Addme range](https://www.addme.ng/products/best-seller-bundle) to find packs that fit a solo kitchen.

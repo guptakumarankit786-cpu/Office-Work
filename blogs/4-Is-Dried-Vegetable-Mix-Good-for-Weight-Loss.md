@@ -42,9 +42,9 @@ A dried vegetable mix works best as one part of a bigger, simple plan rather tha
 
 ## Mealmate and Weight Conscious Cooking
 
-[Addme Mealmate](https://www.addme.ng/collections/mealmate) is a dried vegetable mix with nothing else added, no protein and no seasoning blended in. This makes it a flexible base for weight conscious cooking, since you control exactly what else goes into the meal. You can stir it into a small portion of rice or pasta to bulk up the plate with fiber, or add it to a pot of beans or a light soup for extra vegetables without extra prep work.
+[Addme Mealmate](https://www.addme.ng/products/addme-mealmate-1-pack) is a dried vegetable mix with nothing else added, no protein and no seasoning blended in. This makes it a flexible base for weight conscious cooking, since you control exactly what else goes into the meal. You can stir it into a small portion of rice or pasta to bulk up the plate with fiber, or add it to a pot of beans or a light soup for extra vegetables without extra prep work.
 
-Because it is dried, a pack of Mealmate keeps for a long time without spoiling, so you are not tempted to skip vegetables on a busy week simply because fresh produce went bad in the fridge. To read more about the nutrition side of dried vegetables, see our earlier article on [dried vegetables and their health benefits](https://www.addme.ng/blogs/news/dried-vegetables-health-benefits-you-did-not-know). If you want a wider range of meal options that already balance vegetables with protein, browse the [full Addme Mealmate collection](https://www.addme.ng/collections/mealmate).
+Because it is dried, a pack of Mealmate keeps for a long time without spoiling, so you are not tempted to skip vegetables on a busy week simply because fresh produce went bad in the fridge. To read more about the nutrition side of dried vegetables, see our earlier article on [dried vegetables and their health benefits](https://www.addme.ng/blogs/news/dried-vegetables-health-benefits-you-did-not-know). If you want another way to add vegetables to your meals, the [Addme Veggie Mix Pack](https://www.addme.ng/products/veggie-mix-pack-vegetables) is a similar dried vegetable option worth trying.
 
 ## Dried, Frozen, or Fresh: Which Is Best for Weight Loss
 

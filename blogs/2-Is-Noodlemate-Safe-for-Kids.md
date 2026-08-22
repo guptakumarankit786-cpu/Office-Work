@@ -73,7 +73,7 @@ These steps do not remove the convenience that makes Noodlemate useful on a busy
 
 ## Which Noodlemate Variant Works Best for Kids
 
-Both the [Noodlemate Chicken](https://addme.ng/products/addme-noodlemate-chicken) and [Noodlemate Crayfish](https://addme.ng/products/addme-noodlemate-crayfish) packs contain real protein and dried vegetables, so either can work for a child's meal. Many parents choose the chicken variant first for children who are new to it, since the flavor is generally milder, then introduce the crayfish variant later. For more fun ways to serve noodles to kids, see our [Children's Day noodle meal ideas](https://www.addme.ng/blogs/news/childrens-day-special-fun-quick-noodle-meals-kids-will-actually-love) and our tips on [making instant noodles taste better in five minutes](https://www.addme.ng/blogs/news/5-minute-noodles-taste-like-you-spent-an-hour).
+Both the [Noodlemate Chicken](https://www.addme.ng/products/noodlemate-chicken-10-packs) and [Noodlemate Crayfish](https://www.addme.ng/products/noodlemate-crayfish-10-packs) packs contain real protein and dried vegetables, so either can work for a child's meal. Many parents choose the chicken variant first for children who are new to it, since the flavor is generally milder, then introduce the crayfish variant later. For more fun ways to serve noodles to kids, see our [Children's Day noodle meal ideas](https://www.addme.ng/blogs/news/childrens-day-special-fun-quick-noodle-meals-kids-will-actually-love) and our tips on [making instant noodles taste better in five minutes](https://www.addme.ng/blogs/news/5-minute-noodles-taste-like-you-spent-an-hour).
 
 ## What to Check on Any Packaged Food for Kids
 
@@ -108,6 +108,6 @@ Both can be part of a healthy diet in moderation. The main difference is control
 
 ## The Bottom Line
 
-Noodlemate is not a health food, and it is not junk food either. It sits in the middle, closer to a real meal than a plain instant noodle pack, because it includes real protein and dried vegetables rather than starch alone. Used a few times a week, with attention to seasoning amount and portion size, it can safely be part of a Nigerian child's diet. Explore the [full range of Addme meal mixes](https://www.addme.ng/collections/shop-addme-bundles) to find options for your family.
+Noodlemate is not a health food, and it is not junk food either. It sits in the middle, closer to a real meal than a plain instant noodle pack, because it includes real protein and dried vegetables rather than starch alone. Used a few times a week, with attention to seasoning amount and portion size, it can safely be part of a Nigerian child's diet. Explore the [full range of Addme meal mixes](https://www.addme.ng/products/best-seller-bundle) to find options for your family.
 
 This article is for general information and is not medical advice. If your child has a specific health condition, food allergy, or dietary restriction, speak with a pediatrician before introducing a new packaged food.

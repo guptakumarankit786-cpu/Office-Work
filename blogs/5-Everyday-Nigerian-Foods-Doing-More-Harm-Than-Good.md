@@ -52,7 +52,7 @@ Instant noodles are fast, cheap, and easy, which is exactly why they can become 
 
 ### Simple Fix
 
-The easiest fix is to add what is missing rather than cut out noodles completely. Adding a boiled or fried egg, some fresh or dried vegetables, and using less than the full seasoning sachet turns a plain bowl into a far more balanced meal. This is exactly the gap that [Addme Noodlemate](https://addme.ng/products/addme-noodlemate-chicken) is built to close, since every pack already includes real protein and dried vegetables along with the seasoning, instead of noodles and salt alone. For more on getting the most out of a bowl of noodles, see our guide on [making instant noodles taste better in five minutes](https://www.addme.ng/blogs/news/5-minute-noodles-taste-like-you-spent-an-hour).
+The easiest fix is to add what is missing rather than cut out noodles completely. Adding a boiled or fried egg, some fresh or dried vegetables, and using less than the full seasoning sachet turns a plain bowl into a far more balanced meal. This is exactly the gap that [Addme Noodlemate](https://www.addme.ng/products/noodlemate-chicken-10-packs) is built to close, since every pack already includes real protein and dried vegetables along with the seasoning, instead of noodles and salt alone. For more on getting the most out of a bowl of noodles, see our guide on [making instant noodles taste better in five minutes](https://www.addme.ng/blogs/news/5-minute-noodles-taste-like-you-spent-an-hour).
 
 ## A Simple Rule for Judging Any Everyday Food
 
@@ -84,6 +84,6 @@ Adding protein and vegetables to a bowl of instant noodles makes it a more balan
 
 ## The Bottom Line
 
-These five everyday foods are not villains, and none of them need to disappear from your kitchen. The real issue is how often they show up on your plate and what is missing alongside them. Small, realistic changes, like using less seasoning cube, adding vegetables to a bowl of noodles, or saving fried snacks for a few days a week instead of every day, can protect your long term health without asking you to give up the food you love. Explore [Addme meal mixes](https://www.addme.ng/collections/shop-addme-bundles) for an easy way to add protein and vegetables back into your everyday meals.
+These five everyday foods are not villains, and none of them need to disappear from your kitchen. The real issue is how often they show up on your plate and what is missing alongside them. Small, realistic changes, like using less seasoning cube, adding vegetables to a bowl of noodles, or saving fried snacks for a few days a week instead of every day, can protect your long term health without asking you to give up the food you love. Explore [Addme meal mixes](https://www.addme.ng/products/best-seller-bundle) for an easy way to add protein and vegetables back into your everyday meals.
 
 This article is for general food information and is not medical advice. If you have a specific health condition such as high blood pressure or diabetes, speak with a doctor for advice suited to your situation.
