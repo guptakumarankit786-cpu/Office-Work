@@ -1,0 +1,571 @@
+<!doctype html>
+<html lang="en-IN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Clean Protein Bars in India | The Whole Truth — Protein Bars Without the Mystery</title>
+<meta name="description" content="The Whole Truth protein bars: every ingredient declared upfront. 12g protein per bar — half from nuts, half from whey. Protein Bars Pro with 20g. Shop protein bars.">
+<!--
+  BUILD NOTES (remove before go-live)
+  Official brand assets could not be downloaded in the build environment (thewholetruthfoods.com
+  was blocked by the network policy). Therefore:
+  1. LOGO: drop the official logo file at assets/the-whole-truth-logo.svg (or .png and update
+     TWT.logo below). It is shown as-is: no recolouring, no resizing beyond height.
+  2. PRODUCT IMAGES + PRICES: when this page is hosted on thewholetruthfoods.com, the script at the
+     bottom reads each product's live data from the store (/products/<handle>.js) and fills in the
+     official packshot and current price. Off-domain, those fields are simply left out (never shown as
+     empty, null or made up). You can also paste official image URLs/prices into TWT.products.
+  3. REVIEWS: paste verbatim reviews from /pages/lovewall into TWT.reviews. Until then the section
+     links to the official review pages and shows no invented quotes.
+  4. INGREDIENTS: the Double Cocoa Pro list below came from retailer listings (official page was
+     unreachable). Confirm against the official product page before launch.
+-->
+<style>
+:root{
+  --white:#FFFFFF; --wash:#F5F1FA; --wash-2:#EBE3F5; --line:#E4DCEE;
+  --purple:#5B2C8C; --purple-dk:#44206A; --purple-lt:#8C63B8;
+  --ink:#1A1520; --ink-2:#4A4452; --muted:#6E6778;
+  --max:1200px; --r:14px;
+  --font:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--white);color:var(--ink);font-family:var(--font);font-size:17px;line-height:1.55;overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
+.skip{position:absolute;left:-999px;top:8px;background:var(--purple);color:#fff;padding:10px 14px;border-radius:8px;z-index:200}
+.skip:focus{left:8px}
+:focus-visible{outline:3px solid var(--purple);outline-offset:3px}
+
+/* type */
+h1,h2,h3{font-weight:900;letter-spacing:-.035em;line-height:1}
+h1{font-size:clamp(2.6rem,9.4vw,4.6rem)}
+h2{font-size:clamp(2.1rem,6.6vw,3.7rem)}
+h3{font-size:1.2rem;letter-spacing:-.015em;line-height:1.2}
+.kicker{display:inline-block;font-size:.78rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--purple)}
+.lede{font-size:1.1rem;color:var(--ink-2);max-width:34em}
+.hl{color:var(--purple)}
+.sec{padding:72px 0}
+.sec-head{max-width:780px;margin-bottom:36px}
+.sec-head .lede{margin-top:14px}
+.sec-head h2{margin-top:12px}
+.wash{background:var(--wash)}
+
+/* buttons: one CTA colour (purple) */
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 28px;border-radius:999px;border:2px solid var(--purple);
+  font:800 .92rem/1 var(--font);letter-spacing:.08em;white-space:nowrap;text-transform:uppercase;text-decoration:none;cursor:pointer;transition:background-color .15s,color .15s,transform .15s}
+.btn-p{background:var(--purple);color:#fff}
+.btn-p:hover{background:var(--purple-dk);border-color:var(--purple-dk);transform:translateY(-2px)}
+.btn-o{background:#fff;color:var(--purple)}
+.btn-o:hover{background:var(--wash)}
+.btn-w{background:#fff;color:var(--purple);border-color:#fff}
+.btn-w:hover{transform:translateY(-2px)}
+.btn-row{display:flex;flex-wrap:wrap;gap:12px}
+.link{font-weight:800;color:var(--purple);text-decoration:underline;text-underline-offset:4px}
+
+/* header */
+.hdr{position:sticky;top:0;z-index:100;background:#fff;border-bottom:1px solid var(--line)}
+.hdr .wrap{display:flex;align-items:center;gap:16px;height:68px}
+.logo{display:flex;align-items:center;height:100%;text-decoration:none;margin-right:auto}
+.logo img{height:34px;width:auto}
+.logo.missing img{display:none}
+.logo.missing::after{content:"Logo";font:800 .7rem/1.2 var(--font);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);
+  border:2px dashed var(--line);border-radius:8px;padding:8px 10px}
+.menu{display:none;list-style:none;gap:30px;font-weight:700;font-size:.95rem}
+.menu a{text-decoration:none;padding:10px 0;display:block}
+.menu a:hover{color:var(--purple)}
+.hdr .btn{min-height:44px;padding:0 18px;font-size:.8rem}
+.burger{width:44px;height:44px;border:1px solid var(--line);border-radius:10px;background:#fff;display:grid;place-items:center;cursor:pointer}
+.burger span,.burger span::before,.burger span::after{display:block;width:18px;height:2px;background:var(--ink);position:relative;transition:transform .2s}
+.burger span::before,.burger span::after{content:"";position:absolute;left:0}
+.burger span::before{top:-6px}.burger span::after{top:6px}
+.burger[aria-expanded="true"] span{background:transparent}
+.burger[aria-expanded="true"] span::before{top:0;transform:rotate(45deg)}
+.burger[aria-expanded="true"] span::after{top:0;transform:rotate(-45deg)}
+.drawer{display:none;border-top:1px solid var(--line);background:#fff}
+.drawer.open{display:block}
+.drawer ul{list-style:none;padding:8px 20px 20px}
+.drawer a{display:block;padding:14px 0;font-weight:800;font-size:1.1rem;text-decoration:none;border-bottom:1px solid var(--line)}
+
+/* hero */
+.hero{padding:30px 0 44px}
+.hero .wrap{display:grid;gap:26px;grid-template-areas:"copy" "art" "proof"}
+.hero-copy{grid-area:copy}.hero-art{grid-area:art}.proof{grid-area:proof}
+.hero h1{margin:12px 0 16px}
+.hero .lede{margin-bottom:22px}
+.hero-art{background:var(--wash);border-radius:24px;padding:18px;display:grid;gap:14px}
+.hero-img{border-radius:16px;overflow:hidden;background:#fff}
+.hero-img[hidden]{display:none}
+.label{background:#fff;border:2px solid var(--ink);border-radius:var(--r);padding:16px 18px}
+.label-top{display:flex;justify-content:space-between;align-items:baseline;gap:8px;flex-wrap:wrap;border-bottom:5px solid var(--ink);padding-bottom:8px}
+.label-top strong{font-weight:900;font-size:1.05rem;letter-spacing:-.02em}
+.label-top span{font-size:.8rem;font-weight:700;color:var(--ink-2)}
+.label ol{list-style:none}
+.label li{display:flex;justify-content:space-between;gap:12px;padding:7px 0;border-bottom:1px solid var(--line);font-weight:700;font-size:.95rem}
+.label li:last-child{border-bottom:0}
+.label li b{font-weight:900;color:var(--purple)}
+.label-note{font-size:.8rem;color:var(--muted);text-align:center}
+.proof{display:grid;gap:12px}
+.proof div{display:flex;gap:14px;align-items:center;font-weight:700}
+.proof b{font-size:1.6rem;font-weight:900;letter-spacing:-.03em;color:var(--purple);min-width:62px}
+.dot{flex:0 0 30px;width:30px;height:30px;border-radius:50%;background:var(--purple);color:#fff;display:grid;place-items:center;font-size:.85rem}
+
+/* ingredients */
+.ingr .wrap{display:grid;gap:36px}
+.ing-list{border-top:3px solid var(--ink)}
+.ing{border-bottom:1px solid var(--line)}
+.ing summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:1fr auto;gap:8px 14px;padding:16px 2px;align-items:center;min-height:52px}
+.ing summary::-webkit-details-marker{display:none}
+.ing .n{font-weight:800;font-size:1.1rem}
+.ing .p{font-weight:900;font-size:1.5rem;letter-spacing:-.03em;color:var(--purple)}
+.ing .m{grid-column:1/-1;height:10px;background:var(--wash-2);border-radius:99px;overflow:hidden}
+.ing .m i{display:block;height:100%;background:var(--purple);border-radius:99px}
+.ing .w{grid-column:1/-1;font-size:.82rem;font-weight:800;color:var(--purple);letter-spacing:.02em}
+.ing .w::after{content:" +"}
+.ing[open] .w::after{content:" –"}
+.ing p{padding:0 2px 18px;color:var(--ink-2)}
+.claims{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+.claims span{border:2px solid var(--purple);color:var(--purple);border-radius:999px;padding:8px 14px;font-weight:800;font-size:.86rem}
+.small{font-size:.85rem;color:var(--muted);margin-top:14px}
+
+/* products */
+.rail{display:grid;grid-auto-flow:column;grid-auto-columns:78%;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:12px;
+  margin:0 -20px;padding-left:20px;padding-right:20px;scrollbar-width:thin}
+.card{scroll-snap-align:start;background:#fff;border:1px solid var(--line);border-radius:var(--r);display:flex;flex-direction:column;overflow:hidden}
+.card-img{aspect-ratio:4/3;background:var(--wash);display:grid;place-items:center;padding:18px;text-align:center}
+.card-img img{width:100%;height:100%;object-fit:contain}
+.card-img .t{font-weight:900;font-size:1.7rem;letter-spacing:-.04em;line-height:1;color:var(--purple)}
+.card-b{padding:18px;display:flex;flex-direction:column;gap:10px;flex:1}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chips span{font-size:.78rem;font-weight:800;padding:5px 9px;border-radius:6px;background:var(--wash);color:var(--purple-dk)}
+.chips .on{background:var(--purple);color:#fff}
+.card .desc{font-size:.95rem;color:var(--ink-2)}
+.price{font-weight:900;font-size:1.2rem}
+.price:empty{display:none}
+.card .btn{margin-top:auto;width:100%}
+.card-all{background:var(--purple);border-color:var(--purple);color:#fff;text-decoration:none;justify-content:flex-end;padding:24px;min-height:260px}
+.card-all strong{font-size:1.9rem;font-weight:900;letter-spacing:-.04em;line-height:1}
+.card-all span{margin-top:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;font-size:.85rem}
+.card-all:hover{background:var(--purple-dk)}
+.after{margin-top:28px;display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+
+/* reviews */
+.rev-grid{display:grid;gap:16px}
+.rev{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:22px;display:flex;flex-direction:column;gap:12px}
+.rev q{font-size:1.1rem;font-weight:700;line-height:1.4}
+.rev .by{margin-top:auto;font-size:.9rem;color:var(--muted)}
+.rev .stars{color:var(--purple);font-weight:900;letter-spacing:.1em}
+.rev-links{display:grid;gap:12px}
+.rev-links a{display:flex;justify-content:space-between;align-items:center;gap:12px;background:#fff;border:1px solid var(--line);border-radius:var(--r);
+  padding:18px 20px;font-weight:800;text-decoration:none;min-height:60px}
+.rev-links a:hover{border-color:var(--purple);color:var(--purple)}
+.rev-links a span{color:var(--purple);font-size:1.3rem}
+
+/* trust */
+.trust{display:grid;gap:0;border-top:3px solid var(--ink)}
+.trust li{list-style:none;display:grid;grid-template-columns:56px 1fr;gap:14px;padding:22px 0;border-bottom:1px solid var(--line)}
+.trust .num{font-weight:900;color:var(--purple);padding-top:2px}
+.trust h3{font-size:1.3rem;text-transform:uppercase}
+.trust p{color:var(--ink-2);margin-top:6px}
+
+/* story / barkhana */
+.story .wrap{display:grid;gap:26px}
+.story blockquote{font-size:clamp(2.1rem,7vw,4.2rem);font-weight:900;letter-spacing:-.04em;line-height:1}
+.story p{color:var(--ink-2);max-width:34em;margin-bottom:22px}
+.bk{background:var(--purple);color:#fff}
+.bk .wrap{display:grid;gap:30px}
+.bk .kicker{color:#E3D6F2}
+.bk h2{margin-top:12px}
+.bk .lede{color:#F1EAF9;margin:16px 0 24px}
+.bk .tag{font-size:clamp(2.4rem,10vw,5.6rem);font-weight:900;letter-spacing:-.05em;line-height:.95;color:#fff;opacity:.95;word-break:break-word}
+.trio{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:22px}
+.trio li{border:2px solid rgba(255,255,255,.6);border-radius:12px;padding:14px 10px;text-align:center;font-weight:900;text-transform:uppercase;letter-spacing:.06em;font-size:.82rem}
+
+/* faq */
+.faq .wrap{display:grid;gap:30px}
+.qa{border-bottom:1px solid var(--line)}
+.qa:first-child{border-top:3px solid var(--ink)}
+.qa summary{list-style:none;cursor:pointer;font-weight:800;font-size:1.08rem;padding:20px 44px 20px 0;position:relative;min-height:60px}
+.qa summary::-webkit-details-marker{display:none}
+.qa summary::after{content:"+";position:absolute;right:6px;top:14px;font-size:1.8rem;font-weight:500;color:var(--purple)}
+.qa[open] summary::after{content:"–"}
+.qa .a{padding:0 0 22px;color:var(--ink-2);max-width:40em}
+
+/* final */
+.final{background:var(--purple);color:#fff;text-align:center;padding:88px 0}
+.final h2{max-width:13em;margin:0 auto 16px}
+.final p{color:#F1EAF9;font-size:1.15rem;margin-bottom:28px}
+.final .btn{min-width:min(100%,320px)}
+
+/* footer */
+footer{padding:52px 0 120px;border-top:1px solid var(--line)}
+footer .wrap{display:grid;gap:30px}
+.f-logo{height:auto;display:inline-flex;margin:0}
+.f-logo img{height:40px;width:auto}
+.f-cols{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+.f-cols h3{font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:var(--purple);margin-bottom:10px}
+.f-cols ul{list-style:none}
+.f-cols a{display:inline-block;padding:7px 0;font-weight:700;text-decoration:none}
+.f-cols a:hover{color:var(--purple);text-decoration:underline}
+.fine{font-size:.82rem;color:var(--muted)}
+
+/* sticky mobile CTA */
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:90;padding:10px 16px calc(10px + env(safe-area-inset-bottom));background:#fff;border-top:1px solid var(--line);
+  display:flex;gap:12px;align-items:center;transform:translateY(110%);transition:transform .2s}
+.sticky.on{transform:none}
+.sticky small{font-weight:800;font-size:.82rem;line-height:1.25;flex:0 1 9em}
+.sticky .btn{flex:1;min-height:50px}
+
+@media (min-width:640px){
+  .rail{grid-auto-columns:44%}
+  .rev-grid{grid-template-columns:repeat(2,1fr)}
+  .rev-links{grid-template-columns:1fr 1fr}
+  .proof{grid-template-columns:repeat(3,1fr)}
+  .proof div{flex-direction:column;align-items:flex-start;gap:8px}
+  .f-cols{grid-template-columns:repeat(3,1fr)}
+}
+@media (min-width:960px){
+  body{font-size:18px}
+  .wrap{padding:0 32px}
+  .menu{display:flex}
+  .burger,.drawer{display:none!important}
+  .hero{padding:56px 0 72px}
+  .hero .wrap{grid-template-columns:1.15fr .85fr;column-gap:60px;row-gap:30px;grid-template-areas:"copy art" "proof art";align-items:center}
+  .sec{padding:104px 0}
+  .ingr .wrap{grid-template-columns:.9fr 1.1fr;gap:72px;align-items:start}
+  .ingr-side{position:sticky;top:110px}
+  .rail{grid-auto-flow:row;grid-template-columns:repeat(3,1fr);overflow:visible;margin:0;padding:0}
+  .rev-grid{grid-template-columns:repeat(3,1fr)}
+  .rev-links{grid-template-columns:repeat(3,1fr)}
+  .trust{grid-template-columns:1fr 1fr;column-gap:56px}
+  .story .wrap{grid-template-columns:1.2fr .8fr;align-items:end;gap:72px}
+  .bk .wrap{grid-template-columns:1fr 1fr;align-items:center;gap:72px}
+  .faq .wrap{grid-template-columns:.8fr 1.2fr;gap:72px}
+  .sticky{display:none}
+  footer{padding-bottom:52px}
+  footer .wrap{grid-template-columns:.8fr 1.2fr;align-items:start}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="hdr">
+  <div class="wrap">
+    <a class="logo" id="logo" href="https://thewholetruthfoods.com/" aria-label="The Whole Truth home">
+      <img src="assets/the-whole-truth-logo.svg" alt="The Whole Truth" height="34" onerror="this.parentNode.classList.add('missing')">
+    </a>
+    <nav aria-label="Main">
+      <ul class="menu">
+        <li><a href="#bars">Protein Bars</a></li>
+        <li><a href="#inside">Ingredients</a></li>
+        <li><a href="#why">Why The Whole Truth</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn-p" href="https://thewholetruthfoods.com/categories/protein-bars">Shop now</a>
+    <button class="burger" id="burger" aria-expanded="false" aria-controls="drawer" aria-label="Open menu"><span></span></button>
+  </div>
+  <nav class="drawer" id="drawer" aria-label="Mobile">
+    <ul>
+      <li><a href="#bars">Protein Bars</a></li>
+      <li><a href="#inside">Ingredients</a></li>
+      <li><a href="#why">Why The Whole Truth</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#faq">FAQs</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+
+<!-- 1. HERO -->
+<section class="hero" aria-labelledby="h1">
+  <div class="wrap">
+    <div class="hero-copy">
+      <p class="kicker">Clean protein bars</p>
+      <h1 id="h1">Protein bars. <span class="hl">Without the mystery.</span></h1>
+      <p class="lede">Every ingredient declared upfront, right where you can read it. 12g protein per bar — half from nuts, half from whey. Want more? Protein Bars Pro bring 20g.</p>
+      <div class="btn-row">
+        <a class="btn btn-p" id="hero-cta" href="https://thewholetruthfoods.com/categories/protein-bars">Shop protein bars</a>
+        <a class="btn btn-o" href="#inside">See the ingredients</a>
+      </div>
+    </div>
+    <figure class="hero-art">
+      <div class="hero-img" id="hero-img" hidden></div>
+      <div class="label" role="group" aria-label="Ingredient list, Protein Bar Pro Double Cocoa">
+        <div class="label-top"><strong>Double Cocoa · Protein Bar Pro</strong><span>67g · 20g protein</span></div>
+        <ol>
+          <li>Cashews <b>34%</b></li><li>Dates <b>26%</b></li><li>Whey protein blend <b>19%</b></li>
+          <li>Almonds <b>10%</b></li><li>Cocoa powder <b>6%</b></li><li>Cocoa butter <b>5%</b></li>
+        </ol>
+      </div>
+      <figcaption class="label-note">The whole list. No asterisks.</figcaption>
+    </figure>
+    <div class="proof" aria-label="Key facts">
+      <div><b>12g</b><span>protein per bar, half from nuts, half from whey</span></div>
+      <div><b>20g</b><span>protein in the Protein Bars Pro range</span></div>
+      <div><span class="dot" aria-hidden="true">✓</span><span>Every ingredient declared upfront</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 2. INGREDIENT PROOF -->
+<section class="sec wash ingr" id="inside" aria-labelledby="h-inside">
+  <div class="wrap">
+    <div class="ingr-side">
+      <p class="kicker">What's inside?</p>
+      <h2 id="h-inside" style="margin-top:12px">Read the whole truth. <span class="hl">Not the fine print.</span></h2>
+      <p class="lede" style="margin-top:16px">Six ingredients. Every percentage. Tap one to see why it's there.</p>
+      <div class="claims" aria-label="What's not added to Double Cocoa Protein Bar Pro">
+        <span>No added sugar</span><span>No preservatives</span><span>No artificial flavours</span>
+      </div>
+      <p class="small">Shown: Double Cocoa, Protein Bar Pro (67g). Each flavour lists its own ingredients on its product page.</p>
+    </div>
+    <div class="ing-list">
+      <details class="ing"><summary><span class="n">Cashews</span><span class="p">34%</span><span class="m" aria-hidden="true"><i style="width:34%"></i></span><span class="w">Why is this here?</span></summary><p>The base. Nuts give the bar its body and soft bite — and part of its protein.</p></details>
+      <details class="ing"><summary><span class="n">Dates</span><span class="p">26%</span><span class="m" aria-hidden="true"><i style="width:26%"></i></span><span class="w">Why is this here?</span></summary><p>The sweetness. No added sugar, so dates do the job — and help hold everything together.</p></details>
+      <details class="ing"><summary><span class="n">Whey protein blend</span><span class="p">19%</span><span class="m" aria-hidden="true"><i style="width:19%"></i></span><span class="w">Why is this here?</span></summary><p>The main protein source. It's why this bar gets to 20g.</p></details>
+      <details class="ing"><summary><span class="n">Almonds</span><span class="p">10%</span><span class="m" aria-hidden="true"><i style="width:10%"></i></span><span class="w">Why is this here?</span></summary><p>More nuts, more texture, more of the good stuff alongside the cashews.</p></details>
+      <details class="ing"><summary><span class="n">Cocoa powder</span><span class="p">6%</span><span class="m" aria-hidden="true"><i style="width:6%"></i></span><span class="w">Why is this here?</span></summary><p>Cocoa number one. The flavour comes from actual cocoa.</p></details>
+      <details class="ing"><summary><span class="n">Cocoa butter</span><span class="p">5%</span><span class="m" aria-hidden="true"><i style="width:5%"></i></span><span class="w">Why is this here?</span></summary><p>Cocoa number two. Hence "Double Cocoa".</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- 3. PRODUCT RANGE -->
+<section class="sec" id="bars" aria-labelledby="h-bars">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="kicker">Shop protein bars</p>
+      <h2 id="h-bars">Clean. <span class="hl">Meet protein.</span></h2>
+      <p class="lede">Pick a flavour, grab a mix, or build your own box.</p>
+    </div>
+    <div class="rail" id="products">
+      <article class="card" data-handle="double-cocoa">
+        <div class="card-img"><span class="t">Double Cocoa</span></div>
+        <div class="card-b">
+          <h3>Double Cocoa Protein Bars</h3>
+          <div class="chips"><span class="on">12g protein / bar</span><span>Box of 8</span></div>
+          <p class="price"></p>
+          <a class="btn btn-p" href="https://thewholetruthfoods.com/products/double-cocoa">Shop now</a>
+        </div>
+      </article>
+      <article class="card" data-handle="lemon-cranberry-box-of-6">
+        <div class="card-img"><span class="t">Lemon Cranberry</span></div>
+        <div class="card-b">
+          <h3>Lemon Cranberry Protein Bars</h3>
+          <div class="chips"><span class="on">12g protein / bar</span><span>Box of 8</span></div>
+          <p class="price"></p>
+          <a class="btn btn-p" href="https://thewholetruthfoods.com/products/lemon-cranberry-box-of-6">Shop now</a>
+        </div>
+      </article>
+      <article class="card" data-handle="all-in-one-box-of-6-protein-bars">
+        <div class="card-img"><span class="t">All in One</span></div>
+        <div class="card-b">
+          <h3>All in One — Box of 8 Protein Bars</h3>
+          <p class="desc">Can't pick? A mixed box to try the range.</p>
+          <div class="chips"><span class="on">12g protein / bar</span><span>Box of 8</span></div>
+          <p class="price"></p>
+          <a class="btn btn-p" href="https://thewholetruthfoods.com/products/all-in-one-box-of-6-protein-bars">Shop now</a>
+        </div>
+      </article>
+      <article class="card" data-handle="personalised-box-pack-of-15-protein-bars">
+        <div class="card-img"><span class="t">Build your box</span></div>
+        <div class="card-b">
+          <h3>Personalised Box — Pack of 15</h3>
+          <p class="desc">Choose your own flavours. Also available as a pack of 30.</p>
+          <div class="chips"><span>Pack of 15</span><span>Pack of 30</span></div>
+          <p class="price"></p>
+          <a class="btn btn-p" href="https://thewholetruthfoods.com/products/personalised-box-pack-of-15-protein-bars">Build a box</a>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-img"><span class="t">Protein Bars Pro</span></div>
+        <div class="card-b">
+          <h3>Protein Bars Pro</h3>
+          <p class="desc">The bigger bar, for bigger protein needs.</p>
+          <div class="chips"><span class="on">20g protein / bar</span></div>
+          <a class="btn btn-p" href="https://thewholetruthfoods.com/categories/protein-bars-pro">Shop Pro range</a>
+        </div>
+      </article>
+      <a class="card card-all" href="https://thewholetruthfoods.com/categories/protein-bars"><strong>See every flavour.</strong><span>Shop all protein bars →</span></a>
+    </div>
+    <div class="after">
+      <a class="btn btn-p" href="https://thewholetruthfoods.com/categories/protein-bars">Shop all protein bars</a>
+    </div>
+  </div>
+</section>
+
+<!-- 4. REVIEWS -->
+<section class="sec wash" id="reviews" aria-labelledby="h-rev">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="kicker">Real people. Real love.</p>
+      <h2 id="h-rev">Don't take our word for it.</h2>
+      <p class="lede">Read what people actually say, unedited, on the product pages and our Love Wall.</p>
+    </div>
+    <div class="rev-grid" id="rev-grid" hidden></div>
+    <div class="rev-links" id="rev-links">
+      <a href="https://thewholetruthfoods.com/products/double-cocoa/reviews">Double Cocoa reviews<span aria-hidden="true">→</span></a>
+      <a href="https://thewholetruthfoods.com/products/lemon-cranberry-box-of-6/reviews">Lemon Cranberry reviews<span aria-hidden="true">→</span></a>
+      <a href="https://thewholetruthfoods.com/products/all-in-one-box-of-6-protein-bars/reviews">All in One reviews<span aria-hidden="true">→</span></a>
+      <a href="https://thewholetruthfoods.com/products/personalised-box-pack-of-15-protein-bars/reviews">Personalised Box reviews<span aria-hidden="true">→</span></a>
+      <a href="https://thewholetruthfoods.com/pages/lovewall">The Love Wall<span aria-hidden="true">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- 5. TRUST -->
+<section class="sec" id="why" aria-labelledby="h-why">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="kicker">Why The Whole Truth</p>
+      <h2 id="h-why">Nothing to hide. <span class="hl">Here's how.</span></h2>
+    </div>
+    <ul class="trust">
+      <li><span class="num">01</span><div><h3>Ingredients upfront</h3><p>Every ingredient declared where you can read it. Not buried on the back.</p></div></li>
+      <li><span class="num">02</span><div><h3>Numbers you can check</h3><p>12g protein per bar, and we tell you where it comes from: half from nuts, half from whey.</p></div></li>
+      <li><span class="num">03</span><div><h3>A factory you can see</h3><p>Our bars are made at Bada Barkhana, an FSSC-certified facility. <a class="link" href="https://thewholetruthfoods.com/pages/manufacturing">See how we make it</a></p></div></li>
+      <li><span class="num">04</span><div><h3>Reviews, unfiltered</h3><p>Every product page carries its reviews, and the Love Wall collects the rest. <a class="link" href="https://thewholetruthfoods.com/pages/lovewall">Read them</a></p></div></li>
+    </ul>
+  </div>
+</section>
+
+<!-- 6. BRAND STORY -->
+<section class="sec wash story" aria-labelledby="h-story">
+  <div class="wrap">
+    <div>
+      <p class="kicker" id="h-story">Why we exist</p>
+      <blockquote style="margin-top:14px">We make real food. <span class="hl">And we prove it.</span></blockquote>
+    </div>
+    <div>
+      <p>Food shouldn't need clever words to sound healthy. So we skip the clever words, put every ingredient on the front, and let you decide. That's how you rebuild trust in food: one honest label at a time.</p>
+      <a class="btn btn-o" href="https://thewholetruthfoods.com/pages/our-story">Why we exist</a>
+    </div>
+  </div>
+</section>
+
+<!-- 7. BADA BARKHANA -->
+<section class="sec bk" aria-labelledby="h-bk">
+  <div class="wrap">
+    <div>
+      <p class="kicker">Bada Barkhana</p>
+      <h2 id="h-bk">Come see how we make it.</h2>
+      <p class="lede">Ingredients, process, people. We show you all three, because we literally have nothing to hide.</p>
+      <a class="btn btn-w" href="https://thewholetruthfoods.com/pages/manufacturing">See how we make it</a>
+      <ul class="trio" aria-label="What we show you"><li>Ingredients</li><li>Process</li><li>People</li></ul>
+    </div>
+    <p class="tag" aria-hidden="true">#nothing<br>tohide</p>
+  </div>
+</section>
+
+<!-- 8. FAQ -->
+<section class="sec faq" id="faq" aria-labelledby="h-faq">
+  <div class="wrap">
+    <div>
+      <p class="kicker">Before you buy</p>
+      <h2 id="h-faq" style="margin-top:12px">Questions? Fair.</h2>
+      <p class="lede" style="margin-top:14px">Straight answers. No fine print.</p>
+    </div>
+    <div>
+      <details class="qa"><summary>I don't go to the gym. Are protein bars for me?</summary><div class="a">Yes. Protein isn't just for people who lift. Expecting moms, growing kids and ageing parents need it too, and plenty of us, especially vegetarians, don't get enough of it.</div></details>
+      <details class="qa"><summary>How much protein is there in a bar?</summary><div class="a">12g in a Protein Bar (about 20% of your daily requirement). Mini bars have 6–8g. Protein Bars Pro have 20g.</div></details>
+      <details class="qa"><summary>Where does the protein come from?</summary><div class="a">Half of it comes from whey and the other half from nuts.</div></details>
+      <details class="qa"><summary>Who makes these bars?</summary><div class="a">We do, at Bada Barkhana, our FSSC-certified facility. <a class="link" href="https://thewholetruthfoods.com/pages/manufacturing">See how we make it</a></div></details>
+      <details class="qa"><summary>Where can I see every ingredient?</summary><div class="a">Upfront, on the pack and on every product page. <a class="link" href="#inside">Here's one list</a></div></details>
+    </div>
+  </div>
+</section>
+
+<!-- 9. FINAL CTA -->
+<section class="final" aria-labelledby="h-final">
+  <div class="wrap">
+    <h2 id="h-final">Ready to know what's in your protein bar?</h2>
+    <p>Pick your flavour. Read the ingredients. Get the whole truth.</p>
+    <a class="btn btn-w" href="https://thewholetruthfoods.com/categories/protein-bars">Shop protein bars</a>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <a class="logo f-logo" href="https://thewholetruthfoods.com/" aria-label="The Whole Truth home">
+        <img src="assets/the-whole-truth-logo.svg" alt="The Whole Truth" height="40" loading="lazy" onerror="this.parentNode.classList.add('missing')">
+      </a>
+      <p style="margin-top:14px;max-width:22em">Clean protein bars. Every ingredient upfront. #nothingtohide</p>
+    </div>
+    <div class="f-cols">
+      <div><h3>Shop</h3><ul>
+        <li><a href="https://thewholetruthfoods.com/categories/protein-bars">Protein Bars</a></li>
+        <li><a href="https://thewholetruthfoods.com/categories/protein-bars-pro">Protein Bars Pro</a></li>
+        <li><a href="https://thewholetruthfoods.com/categories/all">All Products</a></li></ul></div>
+      <div><h3>The Whole Truth</h3><ul>
+        <li><a href="https://thewholetruthfoods.com/pages/our-story">Why We Exist</a></li>
+        <li><a href="https://thewholetruthfoods.com/pages/manufacturing">Manufacturing</a></li>
+        <li><a href="https://thewholetruthfoods.com/pages/lovewall">Love Wall</a></li></ul></div>
+      <div><h3>On this page</h3><ul>
+        <li><a href="#inside">Ingredients</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#faq">FAQs</a></li></ul></div>
+    </div>
+    <p class="fine" style="grid-column:1/-1">© The Whole Truth Foods. Always refer to the pack and product page for the latest ingredients and nutrition information.</p>
+  </div>
+</footer>
+
+<div class="sticky" id="sticky" aria-label="Quick shop">
+  <small>Every ingredient upfront.</small>
+  <a class="btn btn-p" href="https://thewholetruthfoods.com/categories/protein-bars">Shop protein bars</a>
+</div>
+
+<script>
+/* ---------- Verified data only. Empty fields are never rendered. ---------- */
+var TWT = {
+  heroImage: "",          // official packshot URL (optional)
+  reviews: []             // verbatim reviews: {text:"", name:"", rating:5, verified:true, product:""}
+};
+(function(){
+  // mobile menu
+  var b=document.getElementById('burger'),d=document.getElementById('drawer');
+  b.addEventListener('click',function(){var o=b.getAttribute('aria-expanded')==='true';b.setAttribute('aria-expanded',String(!o));b.setAttribute('aria-label',o?'Open menu':'Close menu');d.classList.toggle('open',!o);});
+  d.addEventListener('click',function(e){if(e.target.tagName==='A'){b.setAttribute('aria-expanded','false');b.setAttribute('aria-label','Open menu');d.classList.remove('open');}});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&d.classList.contains('open')){b.click();b.focus();}});
+
+  // sticky CTA once the hero CTA scrolls away
+  var s=document.getElementById('sticky'),h=document.getElementById('hero-cta');
+  if('IntersectionObserver' in window){new IntersectionObserver(function(e){s.classList.toggle('on',!e[0].isIntersecting&&e[0].boundingClientRect.top<0);}).observe(h);}
+
+  function el(t,c,txt){var n=document.createElement(t);if(c)n.className=c;if(txt!=null)n.textContent=txt;return n;}
+  function img(src,alt,eager){var i=new Image();i.src=src;i.alt=alt;i.decoding='async';if(!eager)i.loading='lazy';return i;}
+
+  // hero image (only if a verified URL is supplied)
+  if(TWT.heroImage){var hi=document.getElementById('hero-img');hi.appendChild(img(TWT.heroImage,'The Whole Truth protein bars',true));hi.hidden=false;}
+
+  // reviews (verbatim only)
+  var R=(TWT.reviews||[]).filter(function(r){return r&&r.text&&r.name;});
+  if(R.length){var g=document.getElementById('rev-grid');
+    R.slice(0,6).forEach(function(r){var f=el('figure','rev');
+      if(r.rating){var st=el('span','stars','★★★★★'.slice(0,Math.round(r.rating)));st.setAttribute('aria-label',r.rating+' out of 5');f.appendChild(st);}
+      f.appendChild(el('q',null,r.text));
+      var by=r.name+(r.product?' · '+r.product:'')+(r.verified?' · Verified buyer':'');
+      f.appendChild(el('figcaption','by',by));g.appendChild(f);});
+    g.hidden=false;}
+
+  // live product data when hosted on the official store (same-origin Shopify endpoint)
+  if(/(^|\.)thewholetruthfoods\.com$/.test(location.hostname)&&window.fetch){
+    document.querySelectorAll('.card[data-handle]').forEach(function(c){
+      fetch('/products/'+c.dataset.handle+'.js').then(function(r){return r.ok?r.json():null;}).then(function(p){
+        if(!p)return;
+        if(p.featured_image){var box=c.querySelector('.card-img');box.textContent='';
+          box.appendChild(img(p.featured_image.replace(/^\/\//,'https://'),p.title||c.querySelector('h3').textContent));}
+        if(typeof p.price==='number'&&p.price>0){c.querySelector('.price').textContent='₹'+Math.round(p.price/100).toLocaleString('en-IN');}
+      }).catch(function(){});
+    });
+  }
+})();
+</script>
+</body>
+</html>
