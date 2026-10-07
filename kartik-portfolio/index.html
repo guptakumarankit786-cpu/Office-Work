@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kartik — Video Portfolio</title>
+<meta name="description" content="Kartik — videographer and content creator. Selected reels, grouped by category, with results.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0f0e0d; --bg2:#171513; --card:#1e1b18; --ink:#f4efe8; --mute:#a59d92;
+    --accent:#ff6a2b; --line:#2c2824; --radius:18px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{background:var(--bg);color:var(--ink);font-family:Inter,system-ui,sans-serif;line-height:1.55;-webkit-font-smoothing:antialiased}
+  a{color:inherit}
+  .wrap{max-width:1240px;margin:0 auto;padding:0 24px}
+
+  /* nav */
+  nav{position:sticky;top:0;z-index:20;background:rgba(15,14,13,.85);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+  nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;gap:16px}
+  .logo{font-family:Anton,Impact,'Arial Narrow',sans-serif;font-size:24px;letter-spacing:1px;text-decoration:none}
+  .logo span{color:var(--accent)}
+  .navlinks{display:flex;gap:22px;font-size:14px;color:var(--mute);overflow-x:auto;white-space:nowrap;scrollbar-width:none}
+  .navlinks a{text-decoration:none}.navlinks a:hover{color:var(--ink)}
+
+  /* cover */
+  .cover .wrap{width:100%}
+  .cover{min-height:88vh;display:flex;align-items:flex-end;padding:80px 0 64px;position:relative;overflow:hidden;
+    background:radial-gradient(1200px 600px at 85% 10%,rgba(255,106,43,.22),transparent 60%),var(--bg)}
+  .eyebrow{font-size:13px;letter-spacing:4px;text-transform:uppercase;color:var(--accent);font-weight:600;margin-bottom:18px}
+  .cover h1{font-family:Anton,Impact,'Arial Narrow',sans-serif;font-weight:400;font-size:clamp(64px,13vw,190px);line-height:.9;letter-spacing:1px;text-transform:uppercase}
+  .cover h1 em{font-style:normal;color:var(--accent)}
+  .cover p.lead{max-width:620px;margin-top:26px;font-size:clamp(16px,2vw,20px);color:#d8d1c7}
+  .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:34px}
+  .btn{display:inline-block;padding:14px 26px;border-radius:999px;font-weight:600;font-size:15px;text-decoration:none;border:1px solid var(--line)}
+  .btn.primary{background:var(--accent);border-color:var(--accent);color:#111}
+
+  /* stats band */
+  .stats{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--bg2)}
+  .stats .wrap{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr))}
+  .stat{padding:34px 20px;border-right:1px solid var(--line)}
+  .stat:last-child{border-right:none}
+  .stat b{display:block;font-family:Anton,Impact,'Arial Narrow',sans-serif;font-weight:400;font-size:clamp(40px,5vw,60px);line-height:1;color:var(--ink)}
+  .stat span{display:block;margin-top:8px;color:var(--mute);font-size:14px}
+
+  /* about */
+  .about{padding:110px 0 40px}
+  .about .grid{display:grid;grid-template-columns:1fr 1.4fr;gap:60px}
+  .label{font-size:13px;letter-spacing:4px;text-transform:uppercase;color:var(--mute);font-weight:600}
+  .about h2{font-size:clamp(28px,3.4vw,44px);line-height:1.15;font-weight:600;margin-bottom:20px}
+  .about p{color:#cfc8bd;font-size:17px;margin-bottom:14px}
+  .services{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+  .chip{border:1px solid var(--line);border-radius:999px;padding:8px 16px;font-size:14px;color:#ddd5ca}
+
+  /* sections */
+  .section{padding:100px 0 30px;scroll-margin-top:64px}
+  #contact,#work{scroll-margin-top:64px}
+  .sec-head{display:grid;grid-template-columns:auto 1fr;gap:28px;align-items:end;border-bottom:1px solid var(--line);padding-bottom:28px;margin-bottom:36px}
+  .sec-num{font-family:Anton,Impact,'Arial Narrow',sans-serif;font-size:clamp(70px,10vw,140px);line-height:.8;color:transparent;-webkit-text-stroke:1.5px var(--accent)}
+  .sec-head h2{font-family:Anton,Impact,'Arial Narrow',sans-serif;font-weight:400;font-size:clamp(36px,5.5vw,72px);line-height:1;text-transform:uppercase}
+  .sec-head p{color:var(--mute);max-width:680px;margin-top:10px;font-size:16px}
+  .sec-results{display:flex;gap:28px;flex-wrap:wrap;margin-top:14px}
+  .sec-results div{font-size:14px;color:var(--mute)}
+  .sec-results b{color:var(--ink);font-size:20px;margin-right:6px}
+
+  .reels{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:26px}
+  .reel{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column}
+  .reel-top{display:flex;justify-content:space-between;align-items:center;padding:16px 18px 12px;gap:10px}
+  .reel-top h3{font-size:16px;font-weight:600}
+  .reel-top .idx{font-size:12px;color:var(--accent);font-weight:700;letter-spacing:2px}
+  .embed{background:#fafafa;min-height:560px;display:flex;align-items:center;justify-content:center}
+  .embed .ph{color:#777;font-size:14px;padding:20px;text-align:center}
+  .embed blockquote.instagram-media{margin:0!important;min-width:0!important;width:100%!important;max-width:100%!important;border:0!important;border-radius:0!important;box-shadow:none!important}
+  .reel-meta{display:flex;gap:18px;flex-wrap:wrap;padding:14px 18px 18px;border-top:1px solid var(--line);font-size:13px;color:var(--mute)}
+  .reel-meta b{color:var(--ink);font-size:15px;margin-right:4px}
+  .reel-meta:empty{display:none}
+
+  /* contact */
+  .contact{padding:120px 0 90px;text-align:center}
+  .contact h2{font-family:Anton,Impact,'Arial Narrow',sans-serif;font-weight:400;font-size:clamp(48px,9vw,120px);line-height:.95;text-transform:uppercase}
+  .contact h2 em{font-style:normal;color:var(--accent)}
+  .contact p{color:var(--mute);margin:18px auto 30px;max-width:520px}
+  footer{border-top:1px solid var(--line);padding:26px 0;color:var(--mute);font-size:13px}
+  footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+
+  @media (max-width:820px){
+    .about .grid{grid-template-columns:1fr;gap:24px}
+    .sec-head{grid-template-columns:1fr;gap:6px}
+    .stat{border-right:none;border-bottom:1px solid var(--line)}
+    .reels{grid-template-columns:1fr}
+    .wrap{padding:0 16px}
+  }
+</style>
+</head>
+<body>
+
+<!--
+  ============================================================
+  EDIT HERE: everything on the page comes from PORTFOLIO below.
+  - Change section titles / descriptions.
+  - Give each reel a name (title).
+  - Add real results: views, likes, shares, saves (numbers only).
+    Section totals and the top stats band are calculated automatically.
+  Videos are Instagram's official embeds, so they play at Instagram's
+  original quality — nothing is re-uploaded or compressed here.
+  ============================================================
+-->
+<script>
+const PROFILE = {
+  name: "Kartik",
+  role: "Videographer & Content Creator",
+  intro: "I shoot and edit short-form videos that stop the scroll — reels built for brands, food, products and people. Every frame is planned for the first three seconds, edited for retention, and made to perform on Instagram.",
+  about: [
+    "From concept and shot list to shooting, editing, colour and sound — I handle the full process, so brands get a reel that is ready to post.",
+    "Below is a selection of my work, grouped by category, with the results each reel delivered."
+  ],
+  services: ["Reel shooting", "Editing & colour grading", "Food & product videography", "Brand storytelling", "Instagram content strategy"],
+  email: "",          // e.g. "kartik@email.com"
+  instagram: "",      // e.g. "https://www.instagram.com/yourhandle/"
+  phone: ""           // e.g. "+91 90000 00000"
+};
+
+const PORTFOLIO = [
+  {
+    title: "Featured Work",
+    desc: "The reels that best show my style — strong hooks, clean cuts and storytelling that keeps people watching.",
+    reels: [
+      { id: "DBI-Ue_IfI3", title: "Featured Reel 01", views: null, likes: null, shares: null },
+      { id: "DT2cj0viM7d", title: "Featured Reel 02", views: null, likes: null, shares: null }
+    ]
+  },
+  {
+    title: "Brand Campaigns",
+    desc: "Reels made for brands — product moments, launches and promotions, shot and edited to drive action.",
+    reels: [
+      { id: "DTj02lqCrFI", title: "Brand Reel 01", views: null, likes: null, shares: null },
+      { id: "DRWQMbMCLy2", title: "Brand Reel 02", views: null, likes: null, shares: null },
+      { id: "DNIDddevvwK", title: "Brand Reel 03", views: null, likes: null, shares: null },
+      { id: "DBdmrCRs_y6", title: "Brand Reel 04", views: null, likes: null, shares: null },
+      { id: "DTQESDuiDTN", title: "Brand Reel 05", views: null, likes: null, shares: null },
+      { id: "DTCdnJECBG4", title: "Brand Reel 06", views: null, likes: null, shares: null }
+    ]
+  },
+  {
+    title: "Content Reels",
+    desc: "A wider body of short-form work — different formats, pacing and edit styles across niches.",
+    reels: [
+      { id: "DW1MLu8DMiS", title: "Content Reel 01", views: null, likes: null, shares: null },
+      { id: "DVyoBtcDC2G", title: "Content Reel 02", views: null, likes: null, shares: null },
+      { id: "DVsuHOjDB4u", title: "Content Reel 03", views: null, likes: null, shares: null },
+      { id: "DNXelhMsXWs", title: "Content Reel 04", views: null, likes: null, shares: null },
+      { id: "DMevyZXzLmR", title: "Content Reel 05", views: null, likes: null, shares: null },
+      { id: "DVtKa9OIph2", title: "Content Reel 06", views: null, likes: null, shares: null },
+      { id: "DYwyJigoFrm", title: "Content Reel 07", views: null, likes: null, shares: null },
+      { id: "DXL_5upDO6M", title: "Content Reel 08", views: null, likes: null, shares: null },
+      { id: "DVIBns7Cvwt", title: "Content Reel 09", views: null, likes: null, shares: null },
+      { id: "DSZ6zVdDOX8", title: "Content Reel 10", views: null, likes: null, shares: null },
+      { id: "DW3xgKljvcp", title: "Content Reel 11", views: null, likes: null, shares: null },
+      { id: "DWBmlU4gtt_", title: "Content Reel 12", views: null, likes: null, shares: null },
+      { id: "DV01SF5Ewxy", title: "Content Reel 13", views: null, likes: null, shares: null },
+      { id: "DT2bq2aAuve", title: "Content Reel 14", views: null, likes: null, shares: null },
+      { id: "Db_P3SXNJ89", title: "Content Reel 15", views: null, likes: null, shares: null }
+    ]
+  },
+  {
+    title: "Latest Work",
+    desc: "My most recent reels — where my style is today.",
+    reels: [
+      { id: "Dcv8ZqIN2d2", title: "Latest Reel 01", views: null, likes: null, shares: null },
+      { id: "DXjsAAoDVcd", title: "Latest Reel 02", views: null, likes: null, shares: null },
+      { id: "DM2hGgVsIXf", title: "Latest Reel 03", views: null, likes: null, shares: null }
+    ]
+  }
+];
+</script>
+
+<nav><div class="wrap">
+  <a class="logo" href="#top" id="logo"></a>
+  <div class="navlinks" id="navlinks"></div>
+</div></nav>
+
+<header class="cover" id="top"><div class="wrap">
+  <div class="eyebrow" id="role"></div>
+  <h1 id="bigname"></h1>
+  <p class="lead" id="intro"></p>
+  <div class="cta">
+    <a class="btn primary" href="#work">View work</a>
+    <a class="btn" href="#contact">Work with me</a>
+  </div>
+</div></header>
+
+<section class="stats"><div class="wrap" id="stats"></div></section>
+
+<section class="about"><div class="wrap grid">
+  <div class="label">About</div>
+  <div>
+    <h2>Short-form videos made to be watched till the end.</h2>
+    <div id="aboutText"></div>
+    <div class="services" id="services"></div>
+  </div>
+</div></section>
+
+<main id="work"></main>
+
+<section class="contact" id="contact"><div class="wrap">
+  <div class="eyebrow">Contact</div>
+  <h2>Let's make<br><em>something</em> great</h2>
+  <p>Have a product, a brand or an idea? Let's turn it into a reel people actually watch.</p>
+  <div class="cta" style="justify-content:center" id="contactBtns"></div>
+</div></section>
+
+<footer><div class="wrap"><span id="copy"></span><a href="#top">Back to top ↑</a></div></footer>
+
+<script>
+(function(){
+  const $ = id => document.getElementById(id);
+  const fmt = n => n >= 1e6 ? (n/1e6).toFixed(n>=1e7?0:1).replace(/\.0$/,'')+'M'
+                 : n >= 1e3 ? (n/1e3).toFixed(n>=1e4?0:1).replace(/\.0$/,'')+'K' : String(n);
+  const sum = (arr,k) => arr.reduce((s,r)=>s+(Number(r[k])||0),0);
+  const pad = n => String(n).padStart(2,'0');
+
+  // profile
+  $('logo').innerHTML = PROFILE.name.toUpperCase() + '<span>.</span>';
+  $('role').textContent = PROFILE.role;
+  $('bigname').innerHTML = PROFILE.name + '<br><em>Portfolio</em>';
+  $('intro').textContent = PROFILE.intro;
+  $('aboutText').innerHTML = PROFILE.about.map(p=>'<p>'+p+'</p>').join('');
+  $('services').innerHTML = PROFILE.services.map(s=>'<span class="chip">'+s+'</span>').join('');
+  $('copy').textContent = '© ' + new Date().getFullYear() + ' ' + PROFILE.name + ' · ' + PROFILE.role;
+  const btns = [];
+  if (PROFILE.email) btns.push('<a class="btn primary" href="mailto:'+PROFILE.email+'">Email me</a>');
+  if (PROFILE.instagram) btns.push('<a class="btn" href="'+PROFILE.instagram+'" target="_blank" rel="noopener">Instagram</a>');
+  if (PROFILE.phone) btns.push('<a class="btn" href="tel:'+PROFILE.phone.replace(/\s/g,'')+'">Call</a>');
+  $('contactBtns').innerHTML = btns.join('') || '<span style="color:var(--mute)">Add email / Instagram / phone in PROFILE</span>';
+
+  // stats (only real numbers are shown)
+  const all = PORTFOLIO.flatMap(s=>s.reels);
+  const tv = sum(all,'views'), tl = sum(all,'likes'), ts = sum(all,'shares');
+  const withViews = all.filter(r=>Number(r.views)>0).length;
+  const stats = [[all.length,'Reels in this portfolio'],[PORTFOLIO.length,'Categories']];
+  if (tv) stats.push([fmt(tv)+'+','Total views']);
+  if (withViews) stats.push([fmt(Math.round(tv/withViews)),'Average views per reel']);
+  if (tl) stats.push([fmt(tl)+'+','Total likes']);
+  if (ts) stats.push([fmt(ts)+'+','Total shares']);
+  $('stats').innerHTML = stats.map(s=>'<div class="stat"><b>'+s[0]+'</b><span>'+s[1]+'</span></div>').join('');
+
+  // sections
+  $('navlinks').innerHTML = PORTFOLIO.map((s,i)=>'<a href="#sec'+(i+1)+'">'+s.title+'</a>').join('') + '<a href="#contact">Contact</a>';
+  let n = 0;
+  $('work').innerHTML = PORTFOLIO.map((s,i)=>{
+    const v=sum(s.reels,'views'), l=sum(s.reels,'likes'), sh=sum(s.reels,'shares');
+    const res = ['<div><b>'+s.reels.length+'</b>reels</div>'];
+    if (v) res.push('<div><b>'+fmt(v)+'</b>views</div>');
+    if (l) res.push('<div><b>'+fmt(l)+'</b>likes</div>');
+    if (sh) res.push('<div><b>'+fmt(sh)+'</b>shares</div>');
+    const cards = s.reels.map(r=>{
+      n++;
+      const meta = [];
+      if (r.views) meta.push('<span><b>'+fmt(r.views)+'</b>views</span>');
+      if (r.likes) meta.push('<span><b>'+fmt(r.likes)+'</b>likes</span>');
+      if (r.shares) meta.push('<span><b>'+fmt(r.shares)+'</b>shares</span>');
+      return '<article class="reel"><div class="reel-top"><h3>'+r.title+'</h3><span class="idx">'+pad(n)+'</span></div>'+
+             '<div class="embed" data-id="'+r.id+'"><div class="ph">Loading reel…</div></div>'+
+             '<div class="reel-meta">'+meta.join('')+'</div></article>';
+    }).join('');
+    return '<section class="section" id="sec'+(i+1)+'"><div class="wrap">'+
+      '<div class="sec-head"><div class="sec-num">'+pad(i+1)+'</div><div><h2>'+s.title+'</h2><p>'+s.desc+'</p>'+
+      '<div class="sec-results">'+res.join('')+'</div></div></div>'+
+      '<div class="reels">'+cards+'</div></div></section>';
+  }).join('');
+
+  // lazy-load Instagram's official embeds (original quality, cover shown until play)
+  let scriptLoaded = false;
+  function process(){ if (window.instgrm) window.instgrm.Embeds.process(); }
+  function loadScript(){
+    if (scriptLoaded) { process(); return; }
+    scriptLoaded = true;
+    const sc = document.createElement('script');
+    sc.async = true; sc.src = 'https://www.instagram.com/embed.js'; sc.onload = process;
+    document.body.appendChild(sc);
+  }
+  function mount(el){
+    const id = el.dataset.id;
+    el.innerHTML = '<blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/'+id+'/" data-instgrm-version="14">'+
+      '<a href="https://www.instagram.com/reel/'+id+'/" target="_blank" rel="noopener" style="color:#777;font-size:14px">Watch on Instagram</a></blockquote>';
+    loadScript();
+  }
+  const io = 'IntersectionObserver' in window ? new IntersectionObserver(es=>{
+    es.forEach(e=>{ if (e.isIntersecting){ io.unobserve(e.target); mount(e.target); } });
+  },{rootMargin:'600px 0px'}) : null;
+  document.querySelectorAll('.embed').forEach(el=> io ? io.observe(el) : mount(el));
+})();
+</script>
+</body>
+</html>
